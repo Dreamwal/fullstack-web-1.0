@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>     
+</head>
+<body>
+    <h1>Chương trình quản lí sinh viên
+    </h1>
+    
+    <form>
+        <label for="MSSV"> Nhập Mã Số Sinh Viên </label><br>
+        <input type="text" id="MSSV" name="MSSV"><br>
+    </form>
+
+    <p id="demo"></p>
+    <textarea id="display" style="width:1000px;height:1000px"></textarea>
+<script>
+    let txt = "";
+    let students = [
+            {
+                name:"Nguyễn Đức Mạnh",
+                id: 101,
+                phone: "0789307845",
+                class:"12A"
+            },
+            {
+                name:"Nguyễn Ngọc Ngạn",
+                id: 102,
+                phone: "0123456789",
+                class: "12B"
+            },
+            {
+                name:"Trần Tấn Lực",
+                id: 103,
+                phone: "0987654321",
+                class: "12B"
+            },
+            {
+                name:"Nguyễn Đức Nam",
+                id: 104,
+                phone: "06789101112",
+                class: "12A"
+            },
+            {
+                name:"Lê Hữu Thăng Long",
+                id: 105,
+                phone: "045678191113",
+                class: "12A"
+            }
+        ];
+        for (i = 0; i< students.length; i++) {
+                    var myobj=  students[i];
+                    for (var property in myobj) {
+                        txt += property + ": " + myobj[property] + "\n";          
+                    }
+                }                           
+                $("#display").val(txt);   
+</script>
+
+</body>
+</html>
