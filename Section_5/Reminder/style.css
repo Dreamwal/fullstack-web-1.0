@@ -1,0 +1,35 @@
+.create-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .create-container input {
+    margin: 10px;
+  }
+
+  .list-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .list-container .student-list {
+    width: 40%;
+    display: inline-block;
+  }
+  
+  .list-container .student-list button {
+    margin: 10px;
+  }
+  
+  .list-container .info-list li span {
+    display: inline-block;
+    margin-right: 40px;
+    width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  

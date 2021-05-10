@@ -7,28 +7,22 @@
     <title>Document</title>
     <style>
     .parent {
-        display: inline-block;
-        position: relative;
         background-color: #D5B0AC;
         font-weight: bold;
         text-align: center;
         line-height: 30px;
         width: 100px;
-        height: 30px}
-        
-    .parent:hover > ul {
-        display:block;
-        position:absolute}
+        height: 30px
+    }
 
     .child {
-        display: none;
         background-color: #D5B0AC;
         font-weight: bold;
         text-align: center;
         line-height: 30px;
         width: 100px;
-        height: 30px}
-
+        height: 30px
+    }
 
     ul{
         list-style: none;
@@ -36,9 +30,22 @@
         padding: 0px;}
 
     ul ul ul{
-        left: 100%;
+    
         top: 0;
         margin-left:1px;}
+
+    .parent {
+        display: inline-block;
+        position: relative;
+    }
+
+    .child {
+        display: none;
+    }
+        
+    .parent:hover > ul {
+        display:block;
+        position:absolute}
 
     li:hover {
         background-color: #95B4CA;}
