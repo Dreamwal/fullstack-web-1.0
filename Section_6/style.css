@@ -1,0 +1,40 @@
+nav {
+    display:flex;
+    position:fixed;
+    justify-content: flex-end;
+}
+
+section-box {
+    padding-right: 20px;
+}
+
+.body-img{
+    width: 350px;
+    height: 350px;
+}
+
+
+.project-container{
+    display:flex;
+    background-color: gray;
+}
+
+.project-container > div {
+    margin:10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.text-container {
+    position: relative;
+}
+
+.top-left-image{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding:8px 16px
+}
+
