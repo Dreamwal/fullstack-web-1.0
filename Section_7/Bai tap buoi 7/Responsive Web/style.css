@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr 0.3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    background-color: #fff;
+}
+
+
+/*  Style cho phần header */
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    color: #9f9c9c;
+    border-bottom: 2px solid #b0e0ea;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header li {
+    margin-right: 15px;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #50c6db;
+}
+
+.header .logo {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #50c6db;
+}
+
+/*  Style cho phần sidebar image */
+.sidebar-image {
+    grid-column: 1 / 2;
+    grid-row-start: 2 / 3;
+    background-color: #d5c9e2;
+    min-height: 300px;
+    background-image: url("https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=727&q=80");
+}
+
+.sidebar-image-unit img {
+    width: 100%; 
+    height: auto;   
+}
+
+/*  Style cho phần sidebar */
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    padding: 20px;
+    border-top: 3px solid #693f7e;
+    background-color: #f9f9f9;
+}
+
+.sidebar h3 {
+    margin-top: .75rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    font-size: .75rem;
+}
+
+/*  Style cho phần main */
+.main {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+.main h2 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: 1rem;
+    margin-bottom: .75rem;
+}
+
+/*  Style cho phần related post */
+.related-post {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ececec;
+    justify-content: space-between;
+}
+
+.related-post h3 {
+    font-weight: 500;
+    margin-bottom: .5rem;
+    flex: 1 0 auto;
+}
+  
+.related-post p {
+    font-size: .75rem;
+    margin-bottom: .75rem;
+}
+  
+.related-post button {
+    background-color: white;
+    border: 2px solid #50c6db;
+    color: #50c6db;
+    padding: .5rem;
+}
+
+.content-block-info {
+     flex: 0 1 calc(33% - .5rem);
+}
+
+.livestream-intro {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    text-align: center;
+    padding: 20px 0;
+}  
+
+/*  Style cho phần events */
+.events {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.events h2{
+    color: #ed666f;
+    font-weight: 500;
+}
+  
+.events h3{
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+}
